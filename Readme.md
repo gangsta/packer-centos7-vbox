@@ -1,21 +1,21 @@
 # Packer Configs
 
-* to build Centos Image using Packer be sure that you have installed [packer](https://www.packer.io/downloads.html)
+* To build Centos Image using Packer be sure that you have installed [packer](https://www.packer.io/downloads.html)
 
 ## How to start
 
 * Clone Repository
-* install packer and run following
+* Install packer and run following
 
 ```bash
 packer validate centos-vbox.json
 packer build centos-vbox.json
 ```
-* Or use packer binary from this repositroy(not recomended)
+* Or use packer binary from this repository(not recommended)
 
 ```
 ./packer validate centos-vbox.json
 ./packer build centos-vbox.json
 ```
 
-* In case of Succes Get some beer en enjoy life!
+* In case of success get some beer en enjoy life!
