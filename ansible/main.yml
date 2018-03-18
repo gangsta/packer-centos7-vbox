@@ -1,0 +1,25 @@
+---
+- hosts: all
+  become: yes
+  gather_facts: yes
+  tasks:
+  - name: install the latest version of httpd
+    package:
+      name: httpd
+      state: latest
+
+  - name: install the latest version of epel
+    package:
+      name: epel-release
+      state: latest
+
+  - name: install the latest version of vim
+    package:
+      name: vim
+      state: latest
+
+  - name: copy file
+    file:
+      path: /etc/packerwashere
+      state: directory
+      mode: 0755 
